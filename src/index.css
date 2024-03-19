@@ -1,0 +1,31 @@
+#root {
+  min-height: 100vh;
+}
+
+.btnPrimary {
+  background-color:  #ff35ee;
+  border-style: none;
+  width: 100%;
+}
+.btnPrimary:hover{
+  background-color: #aa239f;
+}
+.btnPrimary:active{
+  background-color: #7a0e71 !important;
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fd;
+}
+
+@media (max-width: 1200px) {
+  h1, h2, h3, h4, h5, h6{
+    font-size: xx-large;
+  }
+  p, a, ul, li{
+    font-size: x-large;
+  }
+}

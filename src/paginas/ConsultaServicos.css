@@ -1,0 +1,10 @@
+.card-img-historico {
+    width: 100%;
+    height: 150px;
+    /* Defina a altura desejada para as imagens */
+    object-fit: scale-down;
+}
+
+.titulo-card-servicoContratado {
+    font-weight: bold;
+}
