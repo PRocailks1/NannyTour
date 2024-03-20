@@ -1,4 +1,4 @@
-import "./Header.css";
+import "./HeaderDesktop.css";
 import logo from "../imagens/logo.png";
 import React from 'react';
 import { Container, Row, Col, Nav } from 'react-bootstrap';

@@ -16,6 +16,20 @@ export default function ListagemDePrestadoras() {
         <CardPrestadora />
         <CardPrestadora />
         <CardPrestadora />
+        <CardPrestadora />
+        <CardPrestadora />
+        <CardPrestadora />
+        <CardPrestadora />
+        <CardPrestadora />
+        <CardPrestadora />
+        <CardPrestadora />
+        <CardPrestadora />
+        <CardPrestadora />
+        <CardPrestadora />
+        <CardPrestadora />
+        <CardPrestadora />
+        <CardPrestadora />
+        <CardPrestadora />
       </Row>
     </Container>
   );
