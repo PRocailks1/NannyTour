@@ -1,6 +1,7 @@
 // components/FormularioAvancado.js
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import './FormGeral.css';
 
 export default function FormularioAvancado() {
     const [tipoUsuario, setTipoUsuario] = useState('Contratante');
@@ -13,7 +14,7 @@ export default function FormularioAvancado() {
         <Container>
             <Row className="justify-content-center">
                 <Col xs={11} lg={8}>
-                    <Form>
+                    <Form className='formulario'>
                         <Form.Group controlId="tipoUsuario" as={Row} className="mb-3">
                             <Form.Label column sm="3">Tipo de Usuário</Form.Label>
                             <Col sm="9">
