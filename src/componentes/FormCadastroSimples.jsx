@@ -65,7 +65,7 @@ export default function FormularioBasico() {
                 </Row>
                 <Row className="justify-content-center">
                   <Col className='col-auto'>
-                    <Button variant="primary" type="submit">
+                    <Button className='btnPrimary' type="submit">
                       Cadastrar
                     </Button>
                   </Col>
