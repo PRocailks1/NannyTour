@@ -110,7 +110,7 @@ export default function FormularioBasico() {
                 </Form.Group>
                 <Row className="justify-content-center mt-4">
                   <Col className='col-auto'>
-                    <Button variant="primary" type="submit">
+                    <Button size="lg" className='btnPrimary' type="submit">
                       Cadastrar
                     </Button>
                   </Col>
