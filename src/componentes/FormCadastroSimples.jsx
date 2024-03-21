@@ -77,31 +77,31 @@ export default function FormularioBasico() {
           <Row className="justify-content-center">
             <Col xs={11}>
               <Form className='formulario'>
-                <Form.Group controlId="nomeCompleto">
+                <Form.Group className="mb-3" controlId="nomeCompleto">
                   <Form.Label>Nome Completo</Form.Label>
                   <Form.Control size="lg" type="text" placeholder="Digite seu nome completo" />
                 </Form.Group>
-                <Form.Group controlId="dataNascimento">
+                <Form.Group className="mb-3" controlId="dataNascimento">
                   <Form.Label>Data de Nascimento</Form.Label>
                   <Form.Control size="lg" type="date" />
                 </Form.Group>
-                <Form.Group controlId="cpf">
+                <Form.Group className="mb-3" controlId="cpf">
                   <Form.Label>CPF</Form.Label>
                   <Form.Control size="lg" type="text" placeholder="Digite seu CPF" />
                 </Form.Group>
-                <Form.Group controlId="email">
+                <Form.Group className="mb-3" controlId="email">
                   <Form.Label>Email</Form.Label>
                   <Form.Control size="lg" type="email" placeholder="Digite seu email" />
                 </Form.Group>
-                <Form.Group controlId="senha">
+                <Form.Group className="mb-3" controlId="senha">
                   <Form.Label>Senha</Form.Label>
                   <Form.Control size="lg" type="password" placeholder="Digite sua senha" />
                 </Form.Group>
-                <Form.Group controlId="confirmarSenha">
+                <Form.Group className="mb-3" controlId="confirmarSenha">
                   <Form.Label>Confirmar Senha</Form.Label>
                   <Form.Control size="lg" type="password" placeholder="Confirme sua senha" />
                 </Form.Group>
-                <Form.Group controlId="tipoUsuario">
+                <Form.Group className="mb-3" controlId="tipoUsuario">
                   <Form.Label>Tipo de Usuário</Form.Label>
                   <Form.Control size="lg" as="select">
                     <option>Contratante</option>
