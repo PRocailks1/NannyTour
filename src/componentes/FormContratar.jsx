@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
-import './FormGeral.css';
 
 export default function ContratacaoServicoForm() {
     return (
@@ -15,11 +14,6 @@ export default function ContratacaoServicoForm() {
             <Row className="justify-content-center">
                 <Col xs={10}>
                     <Form className='formulario'>
-                        <Form.Group as={Row} className="mb-3" controlId="">
-                            <Form.Label column sm="2"></Form.Label>
-                            <Col sm="10">
-                            </Col>
-                        </Form.Group>
                         <Form.Group as={Row} className="mb-3" controlId="data">
                             <Form.Label column sm="2">Data</Form.Label>
                             <Col sm="10">

@@ -5,7 +5,6 @@ import FormCompleto from '../componentes/FormCompleto';
 
 
 export default function Perfil() {
-
   return (
     <Container fluid>
       <Row className='justify-content-center p-3'>

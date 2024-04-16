@@ -1,7 +1,6 @@
 // components/FormularioBasico.js
 import React from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import './FormGeral.css';
 
 export default function FormularioBasico() {
   const isMobile = window.innerWidth >= 1200;
