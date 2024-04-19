@@ -1,8 +1,6 @@
 import React from 'react';
 import { Container, Row, Col} from 'react-bootstrap';
-import './ConsultaServicos.css';
 import FormCompleto from '../componentes/FormCompleto';
-
 
 export default function Perfil() {
   return (
