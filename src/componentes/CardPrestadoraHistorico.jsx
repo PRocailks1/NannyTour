@@ -38,7 +38,7 @@ export default function CardPrestadora() {
                         <Col xs={10} className="d-flex flex-column justify-content-center">
                             <Card.Body>
                                 <Row className="d-flex flex-row text-center mb-3">
-                                    <Col xs={7}><Card.Title className="titulo-card-servicoContratado ">Poliana Rocailks</Card.Title></Col>
+                                    <Col xs={7}><Card.Title className="titulo-card-servicoContratado ">Maria da Silva</Card.Title></Col>
                                     <Col xs={5}>{renderStars()}</Col>
                                 </Row>
                                 <Row className="d-flex flex-row justify-content-between align-items-center">
