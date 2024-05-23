@@ -17,7 +17,7 @@ export default function CardPrestadora() {
                 <Card>
                     <Card.Img variant="top" src={FotoPerfil} className="card-img-listagemPrestadoras" />
                     <Card.Body>
-                        <Card.Title>Poliana Rocailks</Card.Title>
+                        <Card.Title>Maria da Silva</Card.Title>
                         <Card.Text>Idade: 25 anos</Card.Text>
                         <Button onClick={handleContratarClick} className="btnPrimary">Contratar</Button>
                     </Card.Body>
