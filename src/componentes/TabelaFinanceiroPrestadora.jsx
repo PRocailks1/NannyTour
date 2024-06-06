@@ -28,7 +28,7 @@ export default function TabelaFinanceiroPrestadora() {
             <th>Data Serv.</th>
             <th>Valor</th>
             <th>Taxa</th>
-            <th>Valor Liq.</th>
+            <th>Valor Líq.</th>
         </tr>
       </thead>
       <tbody>
@@ -47,7 +47,7 @@ export default function TabelaFinanceiroPrestadora() {
           <td colSpan={2}></td>
           <td>Valor: {totalizadores.valor.toFixed(2)}</td>
           <td>Taxa: {totalizadores.taxa.toFixed(2)}</td>
-          <td>Valor Liq.: {totalizadores.valorLiq.toFixed(2)}</td>
+          <td>Valor Líq.: {totalizadores.valorLiq.toFixed(2)}</td>
           
         </tr>
       </tbody>

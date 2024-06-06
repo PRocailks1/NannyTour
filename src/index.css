@@ -2,6 +2,10 @@
   min-height: 100vh;
 }
 
+.btn{
+  width: 100%;
+}
+
 .btnPrimary {
   background-color:  #ff35ee;
   border-style: none;

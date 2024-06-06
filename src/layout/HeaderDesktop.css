@@ -32,3 +32,19 @@
   background-color:#ff3fef; /* Cor mais escura para o item ativo */
   color: #fff; /* Cor do texto para o item ativo */
 }
+
+.header select{
+  text-align: center;
+  color: #fff !important;
+  background-color: #2a5dca !important;
+  border-style: none !important;
+  border: none !important;
+}
+
+.header select:hover,
+.header select:focus,
+.header select:active,
+.header select:checked{
+  background-color:#ff8bf5 !important;
+  color: #000 !important;
+}
