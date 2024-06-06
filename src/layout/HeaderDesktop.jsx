@@ -25,6 +25,7 @@ export default function Header() {
                 <NavLink to="/listagemprestadoras" onClick={() => handleItemClick("/listagemprestadoras")} className={activeItem === "/listagemprestadoras" ? "sidebar-link active" : "sidebar-link"}>Prestadoras</NavLink>
                 <NavLink to="/perfil" onClick={() => handleItemClick("/perfil")} className={activeItem === "/perfil" ? "sidebar-link active" : "sidebar-link"}>Perfil</NavLink>
                 <NavLink to="/servicos" onClick={() => handleItemClick("/servicos")} className={activeItem === "/servicos" ? "sidebar-link active" : "sidebar-link"}>Serviços</NavLink>
+                <NavLink to="/financeiro" onClick={() => handleItemClick("/financeiro")} className={activeItem === "/financeiro" ? "sidebar-link active" : "sidebar-link"}>Financeiro</NavLink>
                 <NavLink to="/" onClick={() => handleItemClick("/")} className={activeItem === "/" ? "sidebar-link active" : "sidebar-link"}>Sair</NavLink>
               </Nav>
             </Col>

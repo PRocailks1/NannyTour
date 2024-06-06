@@ -6,6 +6,7 @@ import Login from "./paginas/Login";
 import ListagemDePrestadoras from "./paginas/ListagemDePrestadoras";
 import ConsultaServicos from "./paginas/ConsultaServicos";
 import Perfil from "./paginas/Perfil";
+import Financeiro from "./paginas/ExtratoFinanceiro";
 import { Root } from "./Root";
 import NotFound from "./paginas/NotFound";
 import { LayoutDash } from "./LayoutDash";
@@ -28,6 +29,10 @@ const routes = createBrowserRouter([
           {
             path: "/perfil",
             element: <Perfil/>,
+          },
+          {
+            path: "/financeiro",
+            element: <Financeiro/>,
           }
         ],
       },
