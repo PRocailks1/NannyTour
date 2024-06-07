@@ -5,19 +5,17 @@ import './TabelaFinanceiroPrestadora.css';
 export default function TabelaFinanceiroPrestadora() {
   // Dados de exemplo
   const dados = [
-    { contratante: 'João Silva', data: '01/05/2024', valor: 100, taxa: 10, valorLiq: 90 },
-    { contratante: 'Maria Oliveira', data: '01/05/2024', valor: 200, taxa: 20, valorLiq: 180 },
-    { contratante: 'Carlos Souza', data: '01/05/2024', valor: 150, taxa: 15, valorLiq: 135 },
+    { contratante: 'João Silva', data: '01/05/2024', horas: 2},
+    { contratante: 'Maria Oliveira', data: '01/05/2024', horas: 3},
+    { contratante: 'Carlos Souza', data: '01/05/2024', horas: 2 },
   ];
 
   // Cálculo dos totalizadores
   const totalizadores = dados.reduce((totals, item) => {
     totals.qtde += 1;
-    totals.valor += item.valor;
-    totals.taxa += item.taxa;
-    totals.valorLiq += item.valorLiq;
+    totals.horas += item.horas;
     return totals;
-  }, { qtde: 0, valor: 0, taxa: 0, valorLiq: 0 });
+  }, { qtde: 0, horas: 0});
 
   return (
     <Table striped borderless>
@@ -26,7 +24,8 @@ export default function TabelaFinanceiroPrestadora() {
             <th>#</th>
             <th>Contratante</th>
             <th>Data Serv.</th>
-            <th>Valor</th>
+            <th>Horas</th>
+            <th>Valor total serv.</th>
             <th>Taxa</th>
             <th>Valor Líq.</th>
         </tr>
@@ -37,17 +36,19 @@ export default function TabelaFinanceiroPrestadora() {
             <td>{index + 1}</td>
             <td>{item.contratante}</td>
             <td>{item.data}</td>
-            <td>{item.valor.toFixed(2)}</td>
-            <td>{item.taxa.toFixed(2)}</td>
-            <td>{item.valorLiq.toFixed(2)}</td>
+            <td>{item.horas}</td>
+            <td>{(item.horas*87).toFixed(2)}</td>
+            <td>{((item.horas*87)*0.15).toFixed(2)}</td>
+            <td>{((item.horas*87) - ((item.horas*87)*0.15)).toFixed(2)}</td>
           </tr>
         ))}
         <tr  className="totalizador">
           <td>Qtde: {totalizadores.qtde}</td>
           <td colSpan={2}></td>
-          <td>Valor: {totalizadores.valor.toFixed(2)}</td>
-          <td>Taxa: {totalizadores.taxa.toFixed(2)}</td>
-          <td>Valor Líq.: {totalizadores.valorLiq.toFixed(2)}</td>
+          <td>Total horas: {totalizadores.horas}</td>
+          <td>Valor: {(totalizadores.horas*87).toFixed(2)}</td>
+          <td>Taxa: {((totalizadores.horas*87)*0.15).toFixed(2)}</td>
+          <td>Valor Líq.: {((totalizadores.horas*87) - ((totalizadores.horas*87)*0.15)).toFixed(2)}</td>
           
         </tr>
       </tbody>

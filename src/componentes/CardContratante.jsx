@@ -1,4 +1,4 @@
-import FotoPerfil from '../imagens/perfil.png';
+import FotoPerfil from '../imagens/contratante.jpg';
 import "./CardPrestadoraHistorico.css";
 import React from 'react';
 import { Row, Col, Card, Button } from 'react-bootstrap';

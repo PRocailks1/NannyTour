@@ -8,6 +8,7 @@ import ConsultaServicos from "./paginas/ConsultaServicos";
 import Perfil from "./paginas/Perfil";
 import Financeiro from "./paginas/ExtratoFinanceiro";
 import Solicitacao from "./paginas/SolicitacaoServicos";
+import RelatorioRendimento from "./paginas/RelatorioDeRendimento";
 import { Root } from "./Root";
 import NotFound from "./paginas/NotFound";
 import { LayoutDash } from "./LayoutDash";
@@ -38,6 +39,10 @@ const routes = createBrowserRouter([
           {
             path: "/solicitacaoservico",
             element: <Solicitacao/>,
+          },
+          {
+            path: "/relatorioderendimento",
+            element: <RelatorioRendimento/>,
           }
         ],
       },

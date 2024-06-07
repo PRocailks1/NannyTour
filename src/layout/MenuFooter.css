@@ -9,3 +9,20 @@
     width: 100%;
     color: #fff;
 }
+
+.footer-menu select{
+    text-align: center;
+    color: #fff !important;
+    background-color: #2a5dca !important;
+    border-style: none !important;
+    border: none !important;
+  }
+  
+  .footer-menu select:hover,
+  .footer-menu select:focus,
+  .footer-menu select:active,
+  .footer-menu select:checked{
+    background-color:#ff8bf5 !important;
+    color: #000 !important;
+  }
+  

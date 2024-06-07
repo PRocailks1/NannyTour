@@ -42,7 +42,7 @@ export default function Header() {
                 )}
                 {selectedOption === 'option3' && (
                   <>
-                    <NavLink to="/financeiro" onClick={() => handleItemClick("/relatorios")} className={activeItem === "/relatorios" ? "sidebar-link active" : "sidebar-link"}>Relatórios</NavLink>
+                    <NavLink to="/relatorioderendimento" onClick={() => handleItemClick("/relatorioderendimento")} className={activeItem === "/relatorioderendimento" ? "sidebar-link active" : "sidebar-link"}>Relatório de Rendimento</NavLink>
                   </>
                 )}
                 <hr />
@@ -56,7 +56,8 @@ export default function Header() {
                       <option value="option2">Prestadora</option>
                       <option value="option3">Administrativo</option>
                     </Form.Select>
-                  </Form.Group></Col>
+                  </Form.Group>
+                </Col>
               </Row>
             </Col>
           </Row>
