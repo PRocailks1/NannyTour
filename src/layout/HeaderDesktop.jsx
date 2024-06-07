@@ -1,12 +1,13 @@
 import "./HeaderDesktop.css";
 import logo from "../imagens/logo.png";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Nav, Form } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 export default function Header() {
   const [activeItem, setActiveItem] = useState('');
   const [selectedOption, setSelectedOption] = useState('option1'); // Estado para controlar a opção selecionada
+  const navigate = useNavigate();
 
   const handleItemClick = (eventKey) => {
     setActiveItem(eventKey);
@@ -15,6 +16,20 @@ export default function Header() {
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
   };
+
+  useEffect(() => {
+    // Redirecionar para o primeiro link da opção selecionada
+    if (selectedOption === 'option1') {
+      navigate("/listagemprestadoras");
+      setActiveItem("/listagemprestadoras");
+    } else if (selectedOption === 'option2') {
+      navigate("/solicitacaoservico");
+      setActiveItem("/solicitacaoservico");
+    } else if (selectedOption === 'option3') {
+      navigate("/relatorioderendimento");
+      setActiveItem("/relatorioderendimento");
+    }
+  }, [selectedOption, navigate]);
 
   return (
     <Container fluid className="header">

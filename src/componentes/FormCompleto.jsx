@@ -157,9 +157,26 @@ export default function FormularioAvancado() {
                                         <Form.Label>Hora de Fim</Form.Label>
                                         <Form.Control size="lg" type="time" />
                                     </Form.Group>
+                                    <Row>
+                                        <Col className="text-center" xs={7}>
+                                            <Form.Group controlId="horaInicio" as={Row} className="mb-4">
+                                                <Col>
+                                                <Form.Label column>Status credenciamento:</Form.Label>
+                                                    <Alert variant="primary">
+                                                        Em análise
+                                                    </Alert>
+                                                </Col>
+                                            </Form.Group>
+                                        </Col>
+                                        <Col xs={5} className='mt-5'>
+                                            <Button onClick={handleCredenciamentoClick} className='btnPrimary'>
+                                                Solicitar credenciamento
+                                            </Button>
+                                        </Col>
+                                    </Row>
                                 </>
                             )}
-                            <Row className="justify-content-center mt-4">
+                            <Row className="justify-content-center mt-4 mb-4">
                                 <Col xs={6} className='col-auto'>
                                     <Button size="lg" className='btnPrimary' type="submit">
                                         Salvar

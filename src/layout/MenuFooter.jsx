@@ -1,14 +1,13 @@
-// FooterMenu.jsx
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './MenuFooter.css';
 import './HeaderDesktop.css';
 import { Row, Col, Nav, Navbar, Form } from 'react-bootstrap';
-import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 export default function MenuFooter() {
     const [activeItem, setActiveItem] = useState('');
     const [selectedOption, setSelectedOption] = useState('option1');
+    const navigate = useNavigate();
 
     const handleItemClick = (eventKey) => {
         setActiveItem(eventKey);
@@ -17,6 +16,20 @@ export default function MenuFooter() {
     const handleOptionChange = (event) => {
         setSelectedOption(event.target.value);
     };
+
+    useEffect(() => {
+        // Redirecionar para o primeiro link da opção selecionada
+        if (selectedOption === 'option1') {
+            navigate("/listagemprestadoras");
+            setActiveItem("/listagemprestadoras");
+        } else if (selectedOption === 'option2') {
+            navigate("/solicitacaoservico");
+            setActiveItem("/solicitacaoservico");
+        } else if (selectedOption === 'option3') {
+            navigate("/relatorioderendimento");
+            setActiveItem("/relatorioderendimento");
+        }
+    }, [selectedOption, navigate]);
 
     return (
         <Navbar className="footer-menu">
@@ -38,7 +51,7 @@ export default function MenuFooter() {
                     )}
                     {selectedOption === 'option3' && (
                         <>
-                        <Col><NavLink to="/relatorioderendimento" onClick={() => handleItemClick("/relatorioderendimento")} className={activeItem === "/relatorioderendimento" ? "sidebar-link active" : "sidebar-link"}>Rendimentos</NavLink></Col>
+                            <Col><NavLink to="/relatorioderendimento" onClick={() => handleItemClick("/relatorioderendimento")} className={activeItem === "/relatorioderendimento" ? "sidebar-link active" : "sidebar-link"}>Rendimentos</NavLink></Col>
                         </>
                     )}
                     <Col><NavLink to="/" onClick={() => handleItemClick("/")} className={activeItem === "/" ? "sidebar-link active" : "sidebar-link"}>Sair</NavLink></Col>
